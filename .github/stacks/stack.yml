@@ -66,8 +66,7 @@ configs:
  security:
     parameters: 
       vulnerability-alerts: ${{inputs.Enable_Vulnerability_Alerts}}
-      automated-security-fixes: ${{ inputs.ENV_SECRET_1 }}
-
+      automated-security-fixes: true
 
 #-------------------------------------------------------------
 # Initialization workflow to run
