@@ -33,7 +33,8 @@ inputs:
   - name: Enable_Vulnerability_Alerts
     description: Enable Vulnerability Alerts
     type: boolean
-    validvalues: hi
+    validvalues: 
+      - true
 
   - name: init_script_echo
     default: "hello world"
