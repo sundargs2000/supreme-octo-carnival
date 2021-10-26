@@ -1,0 +1,34 @@
+name: bug test sundar 1
+description: Tests out env settings
+branding:
+  icon: activity
+  color: blue
+
+inputs:
+  - name: ProductionEnvReviewer
+    type: string
+  - name: DeploySecret
+    type: string
+    is-secret: true
+  
+configs:
+  environments: 
+    - name: env1
+      parameters: 
+        protected-branches: false
+
+    - name: env2
+      parameters: 
+        custom-branch-policies:
+          - main/*
+          - releases*
+
+    - name: env3
+      parameters: 
+        wait-timer: 50
+
+    - name: env4
+      parameters: 
+        reviewers:
+          - name: ${{ inputs.ProductionEnvReviewer }}
+            type: User
