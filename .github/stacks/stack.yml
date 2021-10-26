@@ -58,7 +58,7 @@ configs:
       parameters: 
         secrets:
           - name: ENV_SECRET_1
-            value: ${{ inputs.ENV_SECRET_1 }}
+            value: ${{ inputs.ENV_SECRET_12 }}
           - name: ENV_SECRET_2
             value: ${{ inputs.ENV_SECRET_2 }}
 
